@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to zuxin.space's documentation!
-=======================================
+每日 NASA 太空图大放送
+======================
 
 Contents:
 
