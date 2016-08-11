@@ -1,0 +1,55 @@
+会用到算开根号用的算法
+======================
+
+2016-06-19
+
+  会用到算开根号用的算法，因为开根号有些会得出无理数所以只能逼近结果，而且一个一个式这种暴力法效率太低，下面是一种算法，叫牛顿法。也叫逐步逼近法：首先对结果进行估值，如果值的开根号假定猜测为友，那么就可以通过执行一个简单操作去得到一个更好的猜测：只需要求出y和x/y的平均值，据说牛顿用这个算法把根号2算到过20多位。
+  上述过程写成Lisp代码：
+
+  ::
+
+    （define （sqrt-iter guess x）
+    （if （good-enough？ guess x）
+    guess
+    （sqrt-iter （improve guess x）
+    x）））
+
+  改进猜测的方式就是用它求出它与被开方数除以一个猜测的平均值
+
+  ::
+
+    （define （improve guess x）
+    （average guess （/ x guess）））
+
+  其中
+
+  ::
+
+    （define （average x y）
+    （/ （+ x y）2））
+
+  然后定义足够好（good-enough）如算到小数点后三位
+
+  ::
+
+    （define （good-enough？ guess x）
+    （< (abs(- (square guess) x)) 0.001))
+
+  最后定义初始猜测值，我们可以定义1为任何数的初始猜测值
+
+  ::
+
+    （define （sqrt x）
+    （sqrt-iter 1.0 x））
+
+  然后就可以解开方了，当然这只是算法的一种，求高次的话也有其他算法必如求立方根的牛顿法是如果y是x的立方根的一个近似值，那么(x/y^+2y)/3会给一个更好的近似值。
+  以上全部来自Structure and Interpretation of Cumputer Programs这本书，如果对算法有兴趣绝对值得一读
+
+出典
+----
+
+https://www.zhihu.com/question/25343822/answer/106769226
+
+存档：https://archive.is/Aousw
+
+.. image:: images/会用到算开根号用的算法.png

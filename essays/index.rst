@@ -6,3 +6,4 @@
 
   weibo/index
   lofter/index
+  zhihu/index
