@@ -1,0 +1,21 @@
+自用数据科学云忽悠网站
+======================
+
+2016-07-21
+
+  数据分析实战: http://www.tbk.ren/index.jsp
+
+  kintr作者的blog: http://yihui.name/cn/
+
+  R的极客理想: http://blog.fens.me/series-r/
+
+  中国统计门户: http://cos.name
+
+出典
+----
+
+http://team-ti.lofter.com/post/33ef66_bc18094
+
+归档：https://archive.is/G0lfy
+
+.. image:: images/自用数据科学云忽悠网站.png
