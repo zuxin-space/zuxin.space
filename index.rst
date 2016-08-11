@@ -6,17 +6,29 @@
 每日 NASA 太空图大放送
 ======================
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 3
 
+  saying/index
+  essays/index
+  idiom
+  glossary
 
-
-Indices and tables
-==================
+目录和搜索
+==========
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
+贡献
+====
+
+参见 GitHub 代码库 README：https://github.com/zuxin-space/zuxin.space
+
+许可证
+======
+
+如无另外说明，所有内容依 `Creative Commons BY-NC 4.0`_ 发布。
+
+.. _`Creative Commons BY-NC 4.0`: https://creativecommons.org/licenses/by-nc/4.0/
